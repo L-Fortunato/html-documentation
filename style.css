@@ -1,0 +1,104 @@
+body, ul, li, ol, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
+    color: rgb(68, 68, 68);
+}
+
+#Lists ul, ol {
+    padding-left: 20px;
+}
+
+.code {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(68, 68, 68);
+    padding: 10px;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+}
+
+#main-doc {
+    display: flex;
+    order: 2;
+    flex-direction: column;
+    position: relative;
+    width: 800px;
+    margin: 20px 20px 100px 350px;
+    line-height: 1.6;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    order: 1;
+    margin-right: 20px;
+    text-align: center;
+    position: fixed;
+    border-style: solid;
+    border-top: none;
+    height: 100%;
+    border-width: 1px;
+    justify-content: space-between;
+    border-right: solid 2px;
+}
+
+#navbar li {
+    padding: 15px 0 15px 0;
+    border-style: solid;
+    border-width: 1px;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    list-style: none;
+}
+
+#nav-header {
+    padding: 15px 10px 15px 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background-color: white;
+}
+
+@media (max-width: 480px) {
+    /*This will make the side bar go to the top, and become scrollable*/
+    #navbar {
+        position: absolute;
+        height: auto;
+        text-align: center;
+        margin: 0px 20px 0px 40px;
+        width: 80%;
+        height: 260px;
+        border-right: solid 1px;
+    }
+    #navbar div {
+        overflow: auto;
+    }
+    #nav-header {
+        border-right: solid, 1px;
+    }
+    #navbar ul {
+        margin-top: 100px;
+    }
+    #navbar header {
+        position: absolute;
+        width: 93%;
+    }
+    #main-doc {
+        position: relative;
+        margin: 300px 10px 10px 10px;
+        max-width: 95%;
+    }
+}

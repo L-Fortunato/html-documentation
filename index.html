@@ -1,0 +1,174 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <title>Documentation</title>
+</head>
+
+<body>
+    <div id="container">
+        <main id="main-doc" class="flexitem">
+            <section class="main-section" id="Introduction">
+                <header>
+                    <h1>Introduction</h1>
+                </header>
+                <p>HTML (Hyper Text Markup Language), is part of the "holy trinity" of front-end web development,
+                    together with CSS and Javascript.</p><br>
+                <p>It's not properly a programming language, but instead a markup language, that is, it displays the
+                    elements accordingly to the tags they are in.</p><br>
+                <p>The broswer interprets the code and displays it in a readable manner to the user, displaying text,
+                    input fields, images, buttons etc.</p><br>
+                <p>It's current version is HTML5, which is standarized by the W3C (World Wide Web Consortium), an
+                    international organization responsible of stablishing coherent patterns to the internet.</p>
+            </section>
+            <section class="main-section" id="Basic_Structure">
+                <header>
+                    <h1>Basic Structure</h1>
+                </header>
+                <p>The basic structure of an HTML page firstly consists of some basic structure tags, so that the
+                    browser might correctly identify and interpret the document.</p><br>
+                <p>The <code class="code">DOCTYPE</code> tag must always be the first to appear in an HTML document, as
+                    it
+                    identifies
+                    the current version being used.</p><br>
+                <p>Secondly comes the <code class="code">html</code> tag, which determines the limit of document, which
+                    means all
+                    other tags must be within it.</p><br>
+                <p>Next comes the <code class="code">head</code> tag. The content of this tag is not visible on the
+                    browser, which
+                    shows the body of the document instead.</p>
+                <p>It instead, defines aspects and isntructions pertainig content and behaviour.</p><br>
+                <p>The <code class="code">meta</code> tag, which goes inside the <code class="code">head</code> tag, is
+                    maninly used to specify
+                    the characters group to be used in the document, the most used being UTF-8.</p><br>
+                <p>The <code class="code">title</code> tag defines the name of the page, which will be displayed at the
+                    browser's
+                    tab.</p><br>
+                <p>Finally we have the <code class="code">body</code> tag, it marks the space of the document that will
+                    actually
+                    display content in the browser. All tags that contain visual elemnts should be between this tag.</p>
+                <br>
+                <p>Below follows an exmaple showing all mentioned tags together to form a basic structure:</p><br>
+                <code><pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;/&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+                </pre></code>
+            </section>
+            <section class="main-section" id="Headers">
+                <header>
+                    <h1>Headers</h1>
+                </header>
+                <p>Headers are mostly used for title of pages, or sections of the page. It can also function as a way to
+                    pinpoint a "landmark" on your document content. It starts from <code class="code">h1</code> and goes
+                    up to
+                    <code class="code">h6</code>. <code class="code">h1</code> is the largest in size and <code
+                        class="code">h6</code> the smallest.</p>
+                <p>Here's a code example:</p><br>
+                <code><pre>
+&lt;h1&gt;header 1&lt;/h1&gt;
+&lt;h2&gt;header 2&lt;/h2&gt;
+&lt;h3&gt;header 3&lt;/h3&gt;
+&lt;h4&gt;header 4&lt;/h4&gt;
+&lt;h5&gt;header 5&lt;/h5&gt;
+&lt;h6&gt;header 6&lt;/h6&gt;
+                    </pre></code>
+            </section>
+            <section class="main-section" id="Paragraphs">
+                <header>
+                    <h1>Paragraphs</h1>
+                </header>
+                <p>Text paragraphs are generated in html documents by the use of the <code class="code">p</code> tag. It
+                    is the most
+                    commonly used tag to write simple text in html. It hasit's display in blocks, which means each
+                    <code class="code">p</code> tag will be displayed below the previous one.</p><br>
+                <p>Here we can see a snippet of the syntax:</p><br>
+                <code><pre>
+&lt;p&gt;First paragraph.&lt;/p&gt;
+&lt;p&gt;Second paragraph.&lt;/p&gt;
+&lt;p&gt;Third paragraph.&lt;/p&gt;
+&lt;p&gt;Fourth paragraph.&lt;/p&gt; 
+                    </pre></code>
+            </section>
+            <section class="main-section" id="Lists">
+                <header>
+                    <h1>Lists</h1>
+                </header>
+                <p>Lists in html are like lists in any other sort of program or even in real life, it's purpose is to
+                    organize items in a concise fashion. The two mainlists in html are <code class="code">ul</code>
+                    (unordered list)
+                    and <code class="code">ol</code> (ordered list). inside the mentioned list tags, there must
+                    <code>li</code> (list
+                    item) tags, which defines each item to be displayed in the list.</p><br>
+                <p>Below are examples of syntax and what they actually print in the document:</p><br>
+                <code><pre>
+&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+                    </pre></code>
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul><br>
+                <code><pre>
+&lt;ol&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ol&gt;
+                    </pre></code>
+                <ol>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ol>
+            </section>
+            <section class="main-section" id="Images">
+                <header>
+                    <h1>Images</h1>
+                </header>
+                <p>Images in an html document are made trought the <code class="code">img</code> tag. It's a self
+                    closing tag not
+                    needing a second tag with "/". In the <code class="code">src</code> (source) attribute, the archive
+                    address is
+                    indicated, it is needed so the document may fetch the file to display it. It also has another
+                    important atribute which is <code class="code">alt</code>, it displays the inserted text if the
+                    image is
+                    unavailable or cannot be reached.</p><br>
+                <p>Here's a code example:</p><br>
+                <code><pre>
+&lt;img src=&quot;source_image.jpg&quot; alt=&quot;placeholder text&quot;/&gt;
+                    </pre></code>
+            </section>
+        </main>
+        <nav id="navbar" class="flexitem">
+            <div id="navitems">
+                <header id="nav-header">
+                    <h1>HTML Introduction</h1>
+                </header>
+                <div>
+                    <ul>
+                        <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+                        <li><a href="#Basic_Structure" class="nav-link">Basic Structure</a></li>
+                        <li><a href="#Headers" class="nav-link">Headers</a></li>
+                        <li><a href="#Paragraphs" class="nav-link">Paragraphs</a></li>
+                        <li><a href="#Lists" class="nav-link">Lists</a></li>
+                        <li><a href="#Images" class="nav-link">Images</a></li>
+                    </ul>
+                </div>
+        </nav>
+    </div>
+</body>
+
+</html>
